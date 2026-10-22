@@ -1,0 +1,26 @@
+[project]
+name = "workshop-update-for-05"
+version = "0.1.0"
+description = "Churn prediction service"
+readme = "README.md"
+authors = [
+    { name = "Ahmed Bilo", email = "ahmedbinary09@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.154.0",
+    "scikit-learn>=1.9.1",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+workshop-update-for-05 = "workshop_update_for_05:main"
+
+[build-system]
+requires = ["uv_build>=0.13.4,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "requests>=2.34.2",
+]
